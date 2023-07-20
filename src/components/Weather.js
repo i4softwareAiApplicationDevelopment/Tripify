@@ -25,7 +25,6 @@ const Weather = () => {
             try {
                 const response = await fetch(url, options);
                 const result = await response.json();
-                console.log(result)
                 setWeatherData({
                     mainData: result.main,
                     weather: result.weather[0].main
